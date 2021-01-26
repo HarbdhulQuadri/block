@@ -3,8 +3,17 @@ class Block{
         this.timestamp =timestamp;
         this.lastHash =lastHash;
         this.hash     = hash;
-        this.data     = hash;
+        this.data     = data;
     }
-    toString
+    toString(){
+        return ` Block-
+            TimeStamp: $(this.timestamp)
+            Last Hash: $(this.lastHash)
+            Hash: $(this.hash)
+            Data: $(this.data)
+        `;
+
+    }
 
 }
+module.exports =Block;
